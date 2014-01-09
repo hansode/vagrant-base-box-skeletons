@@ -1,4 +1,4 @@
-NAME=sandbox
+NAME=redhat-64
 VERSION=current
 
 all:
