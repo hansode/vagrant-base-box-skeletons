@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Foundry>
+<VM>
+<VMId type="string">52 b2 a5 16 13 d1 1b af-9a b4 0a 81 c0 3a cd 72</VMId>
+<ClientMetaData>
+<clientMetaDataAttributes/>
+<HistoryEventList/></ClientMetaData>
+<vmxPathName type="string">redhat-64_vmware.vmx</vmxPathName></VM></Foundry>
