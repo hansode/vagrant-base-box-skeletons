@@ -1,13 +1,12 @@
 NAME=redhat-64
-VERSION=current
 
 all:
 
 build:
-	tar zcvf $(NAME)-$(VERSION).box Vagrantfile box.ovf box-disk1.vmdk
+	tar zcvf $(NAME).box Vagrantfile box.ovf box-disk1.vmdk
 
 add:
-	vagrant box add  $(NAME)-$(VERSION) $(NAME)-$(VERSION).box
+	vagrant box add  $(NAME) $(NAME).box
 
 clean:
-	vagrant box remove $(NAME)-$(VERSION)
+	vagrant box remove $(NAME)
