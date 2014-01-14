@@ -29,21 +29,22 @@ Building box file
 
 ```
 $ make build
-tar zcvf redhat-64.vmware_workstation.box Vagrantfile box-disk1.vmdk metadata.json redhat-64.vmsd redhat-64.vmx redhat-64.vmxf
+$ make build
+tar zcvf redhat-64.vmware_workstation.box Vagrantfile box-disk1.vmdk metadata.json box.vmsd box.vmx box.vmxf
 Vagrantfile
 box-disk1.vmdk
 metadata.json
-redhat-64.vmsd
-redhat-64.vmx
-redhat-64.vmxf
+box.vmsd
+box.vmx
+box.vmxf
 ```
 
 Adding the generated box
 
 ```
 $ make add
-vagrant box add  redhat-64 redhat-64.vmware_workstation.box vmware_workstation
-Downloading box from URL: file:C:\cygwin\home\hansode\work\repos\git\github.com\vagrantfiles\redhat-64_vmware\redhat-64.vmware_workstation.box
-Extracting box...ate: 600M/s, Estimated time remaining: --:--:--)
+vagrant box add redhat-64 redhat-64.vmware_workstation.box
+Downloading box from URL: file:C:\cygwin\home\hansode\work\repos\git\github.com\vagrant-base-box-skeletons\redhat-64.vmware\redhat-64.vmware_workstation.box
+Extracting box...ate: 252M/s, Estimated time remaining: --:--:--)
 Successfully added box 'redhat-64' with provider 'vmware_workstation'!
 ```
