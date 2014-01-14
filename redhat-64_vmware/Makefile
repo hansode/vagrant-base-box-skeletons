@@ -1,12 +1,13 @@
 NAME=redhat-64_vmware
+PROVIDER=vmware_workstation
 
 all:
 
 build:
-	tar zcvf $(NAME).box Vagrantfile metadata.json $(NAME).vmdk $(NAME).vmsd $(NAME).vmx $(NAME).vmxf
+	tar zcvf $(NAME).$(PROVIDER).box Vagrantfile metadata.json $(NAME).vmdk $(NAME).vmsd $(NAME).vmx $(NAME).vmxf
 
 add:
-	vagrant box add  $(NAME) $(NAME).box
+	vagrant box add $(NAME) $(NAME).$(PROVIDER).box
 
 clean:
-	vagrant box remove $(NAME)
+	vagrant box remove $(NAME) $(PROVIDER)
