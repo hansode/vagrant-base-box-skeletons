@@ -1,4 +1,4 @@
-NAME=redhat-64_vmware
+NAME=redhat-64
 PROVIDER=vmware_workstation
 
 all:
