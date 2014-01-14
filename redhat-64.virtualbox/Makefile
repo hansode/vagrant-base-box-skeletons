@@ -4,7 +4,7 @@ PROVIDER=virtualbox
 all:
 
 build:
-	tar zcvf $(NAME).$(PROVIDER).box Vagrantfile box.ovf box-disk1.vmdk
+	tar zcvf $(NAME).$(PROVIDER).box Vagrantfile box-disk1.vmdk box.ovf
 
 add:
 	vagrant box add $(NAME) $(NAME).$(PROVIDER).box

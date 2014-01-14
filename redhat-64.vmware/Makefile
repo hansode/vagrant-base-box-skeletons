@@ -4,7 +4,7 @@ PROVIDER=vmware_workstation
 all:
 
 build:
-	tar zcvf $(NAME).$(PROVIDER).box Vagrantfile metadata.json $(NAME).vmdk $(NAME).vmsd $(NAME).vmx $(NAME).vmxf
+	tar zcvf $(NAME).$(PROVIDER).box Vagrantfile box-disk1.vmdk metadata.json $(NAME).vmsd $(NAME).vmx $(NAME).vmxf
 
 add:
 	vagrant box add $(NAME) $(NAME).$(PROVIDER).box
