@@ -27,13 +27,12 @@ Getting Started
 Pre-setup vmdk file
 
 ```
-$ cp /path/to/box-disk1.vmdk redhat-64_vmware.vmdk
+$ cp /path/to/box-disk1.vmdk ./box-disk1.vmdk
 ```
 
 Building box file
 
 ```
-$ make build
 $ make build
 tar zcvf redhat-64.vmware_workstation.box Vagrantfile box-disk1.vmdk metadata.json box.vmsd box.vmx box.vmxf
 Vagrantfile
