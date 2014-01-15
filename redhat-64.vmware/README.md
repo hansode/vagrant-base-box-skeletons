@@ -1,4 +1,4 @@
-redhat-64_vmware
+redhat-64.vmware
 ================
 
 Requirements

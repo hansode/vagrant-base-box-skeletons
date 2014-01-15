@@ -1,5 +1,5 @@
-redhat-64
-=========
+redhat-64.virtualbox
+====================
 
 Requirements
 ------------
