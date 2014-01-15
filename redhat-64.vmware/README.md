@@ -5,8 +5,12 @@ Requirements
 ------------
 
 + [Vagrant](http://www.vagrantup.com/)
-+ [VMware Workstation](http://www.vmware.com/jp/products/workstation/)
-+ [VMware Fusion](http://www.vmware.com/jp/products/fusion/)
++ Windows
+  + [VMware Workstation](http://www.vmware.com/jp/products/workstation/)
+  + [vagrant-vmware-workstation](http://docs.vagrantup.com/v2/vmware/installation.html)
++ Mac
+  + [VMware Fusion](http://www.vmware.com/jp/products/fusion/)
+  + [vagrant-vmware-fusion](http://docs.vagrantup.com/v2/vmware/installation.html)
 
 Usage
 -----
