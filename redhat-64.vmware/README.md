@@ -1,11 +1,16 @@
-redhat-64_vmware
+redhat-64.vmware
 ================
 
 Requirements
 ------------
 
-+ Vagrant
-+ VMware Workstation
++ [Vagrant](http://www.vagrantup.com/)
++ Windows
+  + [VMware Workstation](http://www.vmware.com/jp/products/workstation/)
+  + [vagrant-vmware-workstation](http://docs.vagrantup.com/v2/vmware/installation.html)
++ Mac
+  + [VMware Fusion](http://www.vmware.com/jp/products/fusion/)
+  + [vagrant-vmware-fusion](http://docs.vagrantup.com/v2/vmware/installation.html)
 
 Usage
 -----

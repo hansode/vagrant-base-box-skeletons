@@ -1,11 +1,11 @@
-redhat-64
-=========
+redhat-64.virtualbox
+====================
 
 Requirements
 ------------
 
-+ Vagrant
-+ VirtualBox
++ [Vagrant](http://www.vagrantup.com/)
++ [VirtualBox](https://www.virtualbox.org/)
 
 Usage
 -----
