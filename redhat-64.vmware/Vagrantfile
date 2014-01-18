@@ -5,13 +5,12 @@ end
 Vagrant.configure("2") do |config|
  #config.vm.base_mac = "08002700E9DF"
 
-  # SSH in as the default 'core' user, it has the vagrant ssh key.
  #config.ssh.username = "vagrant"
 
   # Disable the base shared folder, guest additions are unavailable.
  #config.vm.synced_folder ".", "/vagrant", disabled: true
 
-  config.vm.provider "vmware_workstation" do |vb|
-   #vb.gui = true
+  config.vm.provider "vmware_workstation" do |v|
+   #v.gui = true
   end
 end
