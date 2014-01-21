@@ -10,10 +10,20 @@ Requirements
 Usage
 -----
 
+### Basic Vagrant Box Workflow
+
 ```
 $ make build
 $ make add
 $ make clean
+```
+
+### Custom Vagrant Box Workflow
+
+```
+$ make build
+$ make add   NAME=foo
+$ make clean NAME=foo
 ```
 
 Getting Started
