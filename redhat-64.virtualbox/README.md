@@ -21,7 +21,7 @@ $ make clean
 ### Custom Vagrant Box Workflow
 
 ```
-$ make build
+$ make build NAME=foo
 $ make add   NAME=foo
 $ make clean NAME=foo
 ```
