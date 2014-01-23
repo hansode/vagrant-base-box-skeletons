@@ -5,7 +5,7 @@
   </References>
   <DiskSection>
     <Info>List of the virtual disks used in the package</Info>
-    <Disk ovf:capacity="8589934592" ovf:diskId="vmdisk1" ovf:fileRef="file1" ovf:format="http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized" vbox:uuid="b9d3e082-fc70-49a1-b070-dcc605afeddf"/>
+    <Disk ovf:capacity="8589934592" ovf:diskId="vmdisk1" ovf:fileRef="file1" ovf:format="http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized" vbox:uuid="ef51bca2-d747-4760-b384-c0d3abd9206a"/>
   </DiskSection>
   <NetworkSection>
     <Info>Logical networks used in the package</Info>
@@ -13,9 +13,9 @@
       <Description>Logical network used by this appliance.</Description>
     </Network>
   </NetworkSection>
-  <VirtualSystem ovf:id="sandbox-current">
+  <VirtualSystem ovf:id="rhel6-32">
     <Info>A virtual machine</Info>
-    <OperatingSystemSection ovf:id="80">
+    <OperatingSystemSection ovf:id="79">
       <Info>The kind of installed guest operating system</Info>
       <Description>RedHat</Description>
       <vbox:OSType ovf:required="false">RedHat</vbox:OSType>
@@ -25,7 +25,7 @@
       <System>
         <vssd:ElementName>Virtual Hardware Family</vssd:ElementName>
         <vssd:InstanceID>0</vssd:InstanceID>
-        <vssd:VirtualSystemIdentifier>sandbox-current</vssd:VirtualSystemIdentifier>
+        <vssd:VirtualSystemIdentifier>rhel6-32</vssd:VirtualSystemIdentifier>
         <vssd:VirtualSystemType>virtualbox-2.2</vssd:VirtualSystemType>
       </System>
       <Item>
@@ -92,7 +92,7 @@
         <rasd:ResourceType>10</rasd:ResourceType>
       </Item>
     </VirtualHardwareSection>
-    <vbox:Machine ovf:required="false" version="1.12-windows" uuid="{8c11ec66-3bb9-4cad-9743-d3d494b1d7da}" name="sandbox-current" OSType="RedHat" snapshotFolder="Snapshots" lastStateChange="2014-01-07T03:57:53Z">
+    <vbox:Machine ovf:required="false" version="1.12-windows" uuid="{a76242e4-8155-40bf-b429-58fcb1ea6402}" name="rhel6-32" OSType="RedHat" snapshotFolder="Snapshots" lastStateChange="2014-01-23T12:58:51Z">
       <ovf:Info>Complete VirtualBox machine configuration in VirtualBox format</ovf:Info>
       <ExtraData>
         <ExtraDataItem name="GUI/FirstRun" value="yes"/>
@@ -104,7 +104,7 @@
           <HardwareVirtExVPID enabled="true"/>
           <HardwareVirtExUX enabled="true"/>
           <PAE enabled="true"/>
-          <HardwareVirtExLargePages enabled="true"/>
+          <HardwareVirtExLargePages enabled="false"/>
           <HardwareVirtForce enabled="false"/>
         </CPU>
         <Memory RAMSize="512" PageFusion="false"/>
@@ -122,7 +122,7 @@
         <RemoteDisplay enabled="false" authType="Null"/>
         <BIOS>
           <ACPI enabled="true"/>
-          <IOAPIC enabled="true"/>
+          <IOAPIC enabled="false"/>
           <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
           <BootMenu mode="MessageAndMenu"/>
           <TimeOffset value="0"/>
@@ -130,14 +130,14 @@
         </BIOS>
         <USBController enabled="false" enabledEhci="false"/>
         <Network>
-          <Adapter slot="0" enabled="true" MACAddress="08002700E9DF" cable="true" speed="0" type="82540EM">
+          <Adapter slot="0" enabled="true" MACAddress="080027A1646E" cable="true" speed="0" type="82540EM">
             <DisabledModes/>
             <NAT>
               <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
               <Alias logging="false" proxy-only="false" use-same-ports="false"/>
             </NAT>
           </Adapter>
-          <Adapter slot="1" enabled="false" MACAddress="080027B3CEA3" cable="true" speed="0" type="82540EM">
+          <Adapter slot="1" enabled="false" MACAddress="08002797A7C6" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -145,7 +145,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="2" enabled="false" MACAddress="08002764B011" cable="true" speed="0" type="82540EM">
+          <Adapter slot="2" enabled="false" MACAddress="080027F22ABF" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -153,7 +153,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="3" enabled="false" MACAddress="080027EECBB3" cable="true" speed="0" type="82540EM">
+          <Adapter slot="3" enabled="false" MACAddress="080027E343E0" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -161,7 +161,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="4" enabled="false" MACAddress="08002782A527" cable="true" speed="0" type="82540EM">
+          <Adapter slot="4" enabled="false" MACAddress="080027538FBA" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -169,7 +169,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="5" enabled="false" MACAddress="080027CAB91B" cable="true" speed="0" type="82540EM">
+          <Adapter slot="5" enabled="false" MACAddress="080027833765" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -177,7 +177,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="6" enabled="false" MACAddress="0800277F4EAC" cable="true" speed="0" type="82540EM">
+          <Adapter slot="6" enabled="false" MACAddress="080027BF2BAC" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -185,7 +185,7 @@
               </NAT>
             </DisabledModes>
           </Adapter>
-          <Adapter slot="7" enabled="false" MACAddress="0800272E2347" cable="true" speed="0" type="82540EM">
+          <Adapter slot="7" enabled="false" MACAddress="0800278D88C5" cable="true" speed="0" type="82540EM">
             <DisabledModes>
               <NAT>
                 <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
@@ -226,7 +226,7 @@
         </StorageController>
         <StorageController name="SATA" type="AHCI" PortCount="1" useHostIOCache="false" Bootable="true" IDE0MasterEmulationPort="0" IDE0SlaveEmulationPort="1" IDE1MasterEmulationPort="2" IDE1SlaveEmulationPort="3">
           <AttachedDevice type="HardDisk" port="0" device="0">
-            <Image uuid="{b9d3e082-fc70-49a1-b070-dcc605afeddf}"/>
+            <Image uuid="{ef51bca2-d747-4760-b384-c0d3abd9206a}"/>
           </AttachedDevice>
         </StorageController>
       </StorageControllers>
