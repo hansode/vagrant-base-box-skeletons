@@ -1,4 +1,4 @@
-redhat-64.virtualbox
+redhat-32.virtualbox
 ====================
 
 Requirements
