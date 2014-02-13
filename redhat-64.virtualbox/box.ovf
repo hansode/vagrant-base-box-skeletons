@@ -13,7 +13,7 @@
       <Description>Logical network used by this appliance.</Description>
     </Network>
   </NetworkSection>
-  <VirtualSystem ovf:id="sandbox-current">
+  <VirtualSystem ovf:id="rhel6-64">
     <Info>A virtual machine</Info>
     <OperatingSystemSection ovf:id="80">
       <Info>The kind of installed guest operating system</Info>
@@ -25,7 +25,7 @@
       <System>
         <vssd:ElementName>Virtual Hardware Family</vssd:ElementName>
         <vssd:InstanceID>0</vssd:InstanceID>
-        <vssd:VirtualSystemIdentifier>sandbox-current</vssd:VirtualSystemIdentifier>
+        <vssd:VirtualSystemIdentifier>rhel6-64</vssd:VirtualSystemIdentifier>
         <vssd:VirtualSystemType>virtualbox-2.2</vssd:VirtualSystemType>
       </System>
       <Item>
@@ -92,7 +92,7 @@
         <rasd:ResourceType>10</rasd:ResourceType>
       </Item>
     </VirtualHardwareSection>
-    <vbox:Machine ovf:required="false" version="1.12-windows" uuid="{8c11ec66-3bb9-4cad-9743-d3d494b1d7da}" name="sandbox-current" OSType="RedHat_64" snapshotFolder="Snapshots" lastStateChange="2014-01-07T03:57:53Z">
+    <vbox:Machine ovf:required="false" version="1.12-windows" uuid="{8c11ec66-3bb9-4cad-9743-d3d494b1d7da}" name="rhel6-64" OSType="RedHat_64" snapshotFolder="Snapshots" lastStateChange="2014-01-07T03:57:53Z">
       <ovf:Info>Complete VirtualBox machine configuration in VirtualBox format</ovf:Info>
       <ExtraData>
         <ExtraDataItem name="GUI/FirstRun" value="yes"/>
