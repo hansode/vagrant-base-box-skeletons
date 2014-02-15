@@ -104,7 +104,7 @@
           <HardwareVirtExVPID enabled="true"/>
           <HardwareVirtExUX enabled="true"/>
           <PAE enabled="true"/>
-          <HardwareVirtExLargePages enabled="false"/>
+          <HardwareVirtExLargePages enabled="true"/>
           <HardwareVirtForce enabled="false"/>
         </CPU>
         <Memory RAMSize="512" PageFusion="false"/>
