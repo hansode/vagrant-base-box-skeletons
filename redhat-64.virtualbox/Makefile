@@ -10,4 +10,4 @@ add:
 	vagrant box add $(NAME) $(NAME).$(PROVIDER).box
 
 clean:
-	vagrant box remove $(NAME) $(PROVIDER)
+	vagrant box remove $(NAME) --provider $(PROVIDER)
