@@ -94,9 +94,6 @@
     </VirtualHardwareSection>
     <vbox:Machine ovf:required="false" version="1.12-windows" uuid="{a76242e4-8155-40bf-b429-58fcb1ea6402}" name="rhel6-32" OSType="RedHat" snapshotFolder="Snapshots" lastStateChange="2014-01-23T12:58:51Z">
       <ovf:Info>Complete VirtualBox machine configuration in VirtualBox format</ovf:Info>
-      <ExtraData>
-        <ExtraDataItem name="GUI/FirstRun" value="yes"/>
-      </ExtraData>
       <Hardware version="2">
         <CPU count="1" hotplug="false">
           <HardwareVirtEx enabled="true"/>
